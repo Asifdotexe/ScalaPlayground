@@ -32,3 +32,32 @@ var name = 'Asif' // will not work
 
 var name = "Asif" // output:var name: String = Asif
 
+// operations
+
+var sum = a + b // output: var sum: Float = 10.5
+
+var product = a * b // output: var product: Float = 27.5
+
+var divide = a / b // output: var divide: Float = 0.90909094
+
+var module = a % b // output: var module: Float = 5.0
+
+5.0 / 0 // output: val res0: Double = Infinity
+
+5 / 0 // output: java.lang.ArithmeticException: / by zero  ... 32 elided
+
+a = 19 // mutating a -> output: a: Int = 19
+
+c // getting out the value of c -> output: val res3: Double = 15.9
+
+var c = a + res3 // using res3 to do an operation -> output: var c: Double = 34.9
+
+res3 = 69 // output: trying to mutate res3 ->
+/* -- [E052] Type Error: ----------------------------------------------------------
+1 |res3 = 69 // trying to mutate res3
+  |^^^^^^^^^
+  |Reassignment to val res3
+  |
+  | longer explanation available when compiling with `-explain`
+1 error found */
+
