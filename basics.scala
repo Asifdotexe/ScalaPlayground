@@ -69,3 +69,10 @@ var yes: Boolean = true
 var no = false
 var no: Boolean = false
 
+// relational operators
+
+var big_num = 500 // output: var big_num: Int = 500
+var small_num = 50 // output: var small_num: Int = 50
+
+big_num > small_num // output: true~
+big_num < small_num // output: false~
