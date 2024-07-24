@@ -76,3 +76,38 @@ var small_num = 50 // output: var small_num: Int = 50
 
 big_num > small_num // output: true~
 big_num < small_num // output: false~
+
+// if-else structure
+
+// if()
+// {
+//     //statement if true
+// }
+// else
+// {
+//     //false statement
+// }
+
+//comparision between 2
+
+if (big_num > small_num) {
+    print(a, " is greater")
+} else {
+    print(a, " is lesser")
+}
+// output: (19, is greater)~
+
+// checking the largest of the three variables
+var a = 6
+var b = 8
+var c = 57
+
+if (a > b && a > c) {
+    print(a, " is largest")
+} else if (b > a &&  b > c) {
+    print(b, " is largest")
+} else {
+    print(c, " is largest")
+}
+
+// output: 57 is largest~
