@@ -61,3 +61,11 @@ res3 = 69 // output: trying to mutate res3 ->
   | longer explanation available when compiling with `-explain`
 1 error found */
 
+// boolean operators
+
+var yes = true
+var yes: Boolean = true
+
+var no = false
+var no: Boolean = false
+
