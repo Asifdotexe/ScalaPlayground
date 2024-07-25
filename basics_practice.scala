@@ -18,3 +18,9 @@ var a = 34 // output: val a: Int = 34
 var b = 34.6f // output: val b: Float = 34.6
 var c = 34.6 // output: val c: Double = 34.6
 var d = "Crowdstrike falcon runs on ring 0" // output: val d: String = Crowdstrike falcon runs on ring 0
+var e = true // output: val e: Boolean = true
+
+// type conversion
+var f = "1" // output: val f: String = 1
+var h = f.toInt // output: val h: Int = 1
+
