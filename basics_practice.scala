@@ -11,3 +11,10 @@ val x = 10 // output: val x: Int = 10
 var y = 20 // output: val y: Int = 20
 var y = 25 // output: val y: Int = 25
 
+/* Data Types */
+
+// define variable of the following data type: Int, Double, Float, String
+var a = 34 // output: val a: Int = 34
+var b = 34.6f // output: val b: Float = 34.6
+var c = 34.6 // output: val c: Double = 34.6
+var d = "Crowdstrike falcon runs on ring 0" // output: val d: String = Crowdstrike falcon runs on ring 0
