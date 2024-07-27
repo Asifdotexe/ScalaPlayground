@@ -111,3 +111,7 @@ if (a > b && a > c) {
 }
 
 // output: 57 is largest~
+
+// string interpolation
+var name = "Asif" // output: var name: String = Asif
+print(s"My name is $name") // output: My name is Asif~
