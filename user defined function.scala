@@ -40,3 +40,13 @@ def getNumberSum(input_number: Int): Int = {
 
   total
 }
+
+def sumNumber(a: Int): Int = {
+    var sum = 0
+    var num = a
+    while (num != 0) {
+        sum += num % 10
+        num /= 10
+    }
+    return sum
+}
