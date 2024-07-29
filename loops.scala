@@ -45,7 +45,7 @@ def isArmstrong(input_number: Int): Boolean = {
 }
 
 def armstrong(input_number: Int): String = {
-    var n = a 
+    var n = input_number
     var sum = 0
 
     while (n != 0) {
@@ -59,4 +59,9 @@ def armstrong(input_number: Int): String = {
     } else {
         return "Not Armstrong"
     }
+}
+
+def findLength(number: Int): Int = {
+    var count = number.toString
+    return count.length
 }
