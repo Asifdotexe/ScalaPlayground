@@ -33,3 +33,30 @@ while (a <= 10) {
     println(a)
     a += 1
 }
+
+// loop for printing armstrong number
+import scala.math as Math
+
+def isArmstrong(input_number: Int): Boolean = {
+    val digits = input_number.toString
+    val numberOfDigits = digits.length
+    var sum = digits.map(digit => Math.pow(digits.toInt, numberOfDigits)).sum
+    return sum == input_number
+}
+
+def armstrong(input_number: Int): String = {
+    var n = a 
+    var sum = 0
+
+    while (n != 0) {
+        var r = n%10
+        sum = sum + (r*r*r)
+        n = n/10
+    }
+
+    if (sum == input_number) {
+        return "Armstrong"
+    } else {
+        return "Not Armstrong"
+    }
+}
