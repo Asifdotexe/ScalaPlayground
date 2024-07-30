@@ -100,3 +100,22 @@ for (i <- 1 to 50) {
         println(s"Divisble by 5: $i")
     }
 }
+
+for (i <- 2 to 50 by 2) {
+    println(i)
+} 
+
+for (i <- 1 to 10) {
+    println(s"2 X $i = $2*i")}
+
+def table(number: Int, till: Int): Unit = {
+    for (i <- 1 to till) {
+        println(s"${number} X $i = ${number * i}")
+}
+
+def table(number: Int, till: Int): Unit = {
+    var count = 1
+    while (count-1 != till) {
+        println(s"${number} X $count = ${number * count}")
+        count += 1
+}
