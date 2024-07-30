@@ -65,3 +65,38 @@ def findLength(number: Int): Int = {
     var count = number.toString
     return count.length
 }
+
+// For loop
+
+for (i <- 1 to 10) {
+    println(i)
+}
+
+for (i <- 1 until 10) {
+    println(i)
+}
+
+var nm L: Seq[Int] = List(1,2,3,4,5)
+
+var nm L: List[Int] = List(1,2,3,4,5)
+
+for (i <- nm) {
+     |  print(i)
+     |  print("-----")
+     | }
+
+
+for (i <- 1 to 50) {
+    if (i % 3 == 0 || i % 5 == 0) {
+        println(s"Divisble by 3 or 5: $i")
+    }
+}
+
+for (i <- 1 to 50) {
+    if (i % 3 == 0) {
+        println(s"Divisble by 3: $i")
+    }
+    else if (i % 5 == 0) {
+        println(s"Divisble by 5: $i")
+    }
+}
