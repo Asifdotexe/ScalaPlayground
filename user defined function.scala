@@ -50,3 +50,4 @@ def sumNumber(a: Int): Int = {
     }
     return sum
 }
+
