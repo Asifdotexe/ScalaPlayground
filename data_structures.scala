@@ -24,8 +24,16 @@ def evenNumber(number: Int): Unit = {
 }
 
 newList.foreach(evenNumber)
+/* output:
+2 is divisible by 2
+4 is divisible by 2
+6 is divisible by 2 */
 
 // appended, prepended and concat
-var combinedList = newList ++ anotherList
+var combinedList = newList ++ anotherList // output: var combinedList: List[Int] = List(1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10)
 
-var combinedList2 = newList.concat(anotherList)
+var combinedList2 = newList.concat(anotherList) // output: var combinedList2: List[Int] = List(1, 2, 3, 4, 5, 6, 7, 8, 8, 9, 10)
+
+var listAppended = newList.appended(11) // output: var listAppended: List[Int] = List(1, 2, 3, 4, 5, 6, 11)
+
+var listPrepended = newList.prepended(0) // output: var listPrepended: List[Int] = List(0, 1, 2, 3, 4, 5, 6)
