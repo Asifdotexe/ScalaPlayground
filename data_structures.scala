@@ -24,3 +24,8 @@ def evenNumber(number: Int): Unit = {
 }
 
 newList.foreach(evenNumber)
+
+// appended, prepended and concat
+var combinedList = newList ++ anotherList
+
+var combinedList2 = newList.concat(anotherList)
