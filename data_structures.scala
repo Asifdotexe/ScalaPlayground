@@ -9,3 +9,18 @@ for (i <- 0 until newList.size){
 
 // one line defination
 for (i <- 0 until newList.size) println(newList(i))
+
+for (i <- 0 until newList.size) {
+    if (newList(i) % 2 == 0){
+        println({newList(i)})
+    }
+}
+
+def evenNumber(number: Int): Unit = {
+    var newNumber = number
+    if (newNumber % 2 == 0) {
+        println(s"$newNumber is divisible by 2")
+    }
+}
+
+newList.foreach(evenNumber)
