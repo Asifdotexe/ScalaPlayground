@@ -137,3 +137,23 @@ def isNumPalindrome(number: Int): Boolean = {
     number.toString == number.toString.reverse
 }
 
+// WRITE A SCALA PROGRAM TO COUNT THE NUMBER OF VOWELS IN A GIVEN STRING USING IF-ELSE STATEMENT AND PATTERN MATCHING.
+----------------------------------------------------------------
+// ALGORITHM
+    // 1. Define a function that takes a string as an input
+    // 2. Initialize a counter for vowels.
+    // 3. Loop through each character in the string of the string
+    // 4. Use if else to check if the character is a vowel
+    // 5. if it is, increment the counter
+    // 6. Return the counter.
+
+def countVowels(text: String): Int = {
+    var vowelCount = 0
+    for (char <- text) {
+        char.toLower match {
+            case 'a'|'e'|'i'|'o'|'u' => vowelCount += 1
+            case _ => 
+        }
+    }
+    vowelCount
+}
