@@ -220,3 +220,13 @@ def create_new_string(text: String): String = {
 				front*3
 		}
 }
+
+// 16. WRITE A SCALA PROGRAM TO CHECK WHETHER A GIVEN NUMBER IS A MULTIPLE OF 3 OR A MULTIPLE OF 7
+// ALGORITHM
+    // 1. Define a function that takes an integer as input.
+    // 2. Check if the number is divisible by 3 or 7 using the modulus operator (%).
+    // 3. If it is divisible by either 3 or 7, return true. Otherwise, return false.
+
+def multiple_of_3_or_7(number: Int): Boolean = {
+    number % 3 == 0 || number % 7 == 0
+}
