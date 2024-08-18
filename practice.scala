@@ -264,3 +264,16 @@ def check_range_define_validity(number1: Int, number2: Int, number3: Int): Unit 
         println("Invalid")
     }
 }
+
+// 19. WRITE A SCALA PROGRAM TO CHECK WHETHER A GIVEN CHARACTER PRESENTS IN THE STRING BETWEEN 2 TO 4 times
+------------------------------------------------------------------------------------------------
+// ALGORITHM
+    // 1. Define a function that takes a string and a character as input.
+    // 2. Check if the length of the string is between 2 and 4.
+    // 3. If it is, iterate through the string and count the occurrences of the given character.
+    // 4. If the count is between 2 and 4, return true. Otherwise, return false.
+
+def characterOccuerence(character: Char, text: String): Boolean = {
+    val charCount = text.count(_ == character)
+    charCount >= 2 && charCount <= 4
+}
