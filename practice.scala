@@ -111,3 +111,15 @@ def sameLastDigit(number1: Int, number2: Int): Boolean = {
     number1 % 10 == number2 % 10
 }
 
+// WRITE A SCALA PROGRAM TO CALCULATE THE SUM OF DIGITS IN A GIVEN NUMBER.
+----------------------------------------------------------------
+// ALGORITHM
+    // 1. Define a function that takes a number as input.
+    // 2. Convert the number into a string
+    // 3. Map each character to it's integer value.
+    // 4. Sum all the integer values.
+    // 5. Return the sum.
+
+def sumOfDigits(number: Int): Int = {
+    number.toString.map(_.asDigit).sum
+}
