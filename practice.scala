@@ -174,6 +174,6 @@ WRITE A SCALA PROGRAM TO CHECK IF A NUMBER IS DIVISIBLE BY 3 OR 5
 // ALGORITHM
     // 1. NOPE... TO EASY FOR ADDING AN ALGORITHM
 
-def div_by_3_or_5(number: Int): Int = {
+def div_by_3_or_5(number: Int): Boolean = {
     number % 3 == 0 || number % 5 == 0
 }
