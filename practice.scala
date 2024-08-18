@@ -223,10 +223,43 @@ def create_new_string(text: String): String = {
 
 // 16. WRITE A SCALA PROGRAM TO CHECK WHETHER A GIVEN NUMBER IS A MULTIPLE OF 3 OR A MULTIPLE OF 7
 // ALGORITHM
+------------------------------------------------------------------------------------------------
     // 1. Define a function that takes an integer as input.
     // 2. Check if the number is divisible by 3 or 7 using the modulus operator (%).
     // 3. If it is divisible by either 3 or 7, return true. Otherwise, return false.
 
 def multiple_of_3_or_7(number: Int): Boolean = {
     number % 3 == 0 || number % 7 == 0
+}
+
+// 17. WRITE A SCALA PROGRAM TO CREATE A NEW STRING TAKING THE FIRST 3 CHAR OF A GIVEN STRING AND RETURN THE 
+// STRING WITH THE 3 CHAR ADDED AT BOTH FRONT, IF THE GIVEN STRING LENGTH IS LESS THAN 3
+// USE WHATEVER CHARACTERS ARE THERE
+------------------------------------------------------------------------------------------------
+// ALGORITHM
+    // 1. Define a function that takes a string as input.
+    // 2. Check if the length of the string is less than 3.
+    // 3. If it is, return the original string.
+    // 4. Otherwise, extract the first 3 characters.
+    // 5. Concatenate these characters at the front and back.
+    // 6. Return the new string.
+
+def addPrefixSuffix(text: String): String = {
+    val prefix = if (text.length < 3) text else text.substring(0, 3)
+    prefix + text + prefix
+}
+
+// 18. WRITE A SCALA PROGRAM TO CHECK WHETHER THREE GIVEN INTEGER VALUES ARE IN THE RANGE OF 20 TO 50 INCLUSIVE
+// RETURN "VALID" IF 1 OR MORE OF THEM ARE IN THE SAID RANGE OTHERWISE "INVALID"
+------------------------------------------------------------------------------------------------
+// ALGORITHM
+    // 1. Define a function that takes three integers as input.
+    // 2. Check if any of the numbers falls within the range 20 to 50.
+
+def check_range_define_validity(number1: Int, number2: Int, number3: Int): Unit = {
+    if ((number1 >= 20 && number1 <= 50) || (number2 >= 20 && number2 <= 50) || (number3 >= 20 && number3 <= 50)) {
+        println("Valid")
+    } else {
+        println("Invalid")
+    }
 }
