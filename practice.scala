@@ -61,3 +61,31 @@ def isLeapYear(year: Int): Boolean = {
         return false
     }
 }
+
+// WRITE A SCALA PROGRAM TO FIND WHETHER A GIVEN NUMBER IS PRIME OR NOT.
+----------------------------------------------------------------
+// ALGORITHM
+    // 1. Define the function tha takes a number as input
+    // 2. Calculate the square root of the number.
+    // 3. Loop through the number starting from 2 up to the square root.
+    // 4. If any number divides the input number, it is not a prime number.
+    // 5. if no divisor are found, it is a prime number.
+
+import scala.math.sqrt
+
+import scala.math.sqrt
+
+def find_prime_number(num: Int) = {
+    if (num <= 1) {
+        println(s"$num is not a prime number")
+    } else {
+        var isPrime = true
+        val limit = sqrt(num.toInt).toInt
+        for (i <- 2 to limit if isPrime) {
+            if (num % i == 0) {
+                isPrime = false
+            }
+        }
+        if (isPrime) println(s"$num is a prime number") else println(s"$num is not a prime number")
+    }
+}
