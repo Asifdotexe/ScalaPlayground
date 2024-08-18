@@ -123,3 +123,17 @@ def sameLastDigit(number1: Int, number2: Int): Boolean = {
 def sumOfDigits(number: Int): Int = {
     number.toString.map(_.asDigit).sum
 }
+
+// WRITE A SCALA PROGRAM TO CHECK IF A NUMBER IS A PALINDROME
+----------------------------------------------------------------
+// ALGORITHM
+    // 1. Define a function to take a number as an input
+    // 2. Conver the number to a string
+    // 3. Reverse the string
+    // 4. Compare the original string with the reversed string
+    // 5. If they are equal, return true. Otherwise, return false.
+
+def isNumPalindrome(number: Int): Boolean = {
+    number.toString == number.toString.reverse
+}
+
