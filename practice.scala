@@ -177,3 +177,10 @@ WRITE A SCALA PROGRAM TO CHECK IF A NUMBER IS DIVISIBLE BY 3 OR 5
 def div_by_3_or_5(number: Int): Boolean = {
     number % 3 == 0 || number % 5 == 0
 }
+
+Write a Scala Program to Check if Two Given Integers Meet Specific Conditions
+Check if either number is 50, or if their sum equals 50.
+--------------------------------------------------------------------
+def check_fifty(a: Int, b: Int): Boolean = {
+    a == 50 || b == 50 || (a + b == 50)
+}
