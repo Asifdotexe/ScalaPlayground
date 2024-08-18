@@ -168,3 +168,12 @@ def countVowels(text: String): Int = {
 def inRange(number1: Int, number2: Int): Boolean = {
     (number1 >= 100 && number1 <= 200) || (number2 >= 100 && number2 <= 200)
 }
+
+WRITE A SCALA PROGRAM TO CHECK IF A NUMBER IS DIVISIBLE BY 3 OR 5
+----------------------------------------------------------------
+// ALGORITHM
+    // 1. NOPE... TO EASY FOR ADDING AN ALGORITHM
+
+def div_by_3_or_5(number: Int): Int = {
+    number % 3 == 0 || number % 5 == 0
+}
