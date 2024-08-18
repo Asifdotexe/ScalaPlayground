@@ -99,3 +99,15 @@ def reverseNum(number: Int): Int = {
     number.toString.reverse.toInt
 }
 
+// WRITE A SCAL A PROGRAM TO CHECK WHETHER TWO POSITVE INTEGRERS HAVE THE SAME LAST DIGIT
+----------------------------------------------------------------
+// ALGORITHM
+    // 1. Define a function that takes two numbers as input.
+    // 2. Get the last digits of both by using % operator.
+    // 3. Compare the last digits.
+    // 4. If they are equal, return true. Otherwise, return false.
+
+def sameLastDigit(number1: Int, number2: Int): Boolean = {
+    number1 % 10 == number2 % 10
+}
+
