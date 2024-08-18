@@ -46,3 +46,18 @@ for (i <- 0 until 11) {
     println(i)
 }
 println(naturalSum)
+
+// WRITE A SCALA PROGRAM TO FIND THE ENTERED YEAR IS A LEAP YEAR OR NOT
+----------------------------------------------------------------
+// ALGORITHM
+    // 1. Take input from the user
+    // 2. Check if the input year is divisible by 4 and not divisible by 100 
+    // 3. or check if the input year is divisble by 400
+
+def isLeapYear(year: Int): Boolean = {
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)){
+        return true
+    } else {
+        return false
+    }
+}
