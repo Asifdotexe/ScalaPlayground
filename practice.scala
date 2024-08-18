@@ -157,3 +157,14 @@ def countVowels(text: String): Int = {
     }
     vowelCount
 }
+
+// WRITE A SCALA PROGRAM TO CHECK IF EITHER OF TWO GIVEN INTEGERS IS IN THE RANGE OF 100 - 200 INCLUSIVE
+------------------------------------------------------------------------------
+// ALGORITHM
+    // 1. Define a function that takes two numbers as input.
+    // 2. Check if either number falls within the range 100 to 200
+    // 3. Return true if either is within the range, otherwise return false
+
+def inRange(number1: Int, number2: Int): Boolean = {
+    (number1 >= 100 && number1 <= 200) || (number2 >= 100 && number2 <= 200)
+}
