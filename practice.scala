@@ -89,3 +89,13 @@ def find_prime_number(num: Int) = {
         if (isPrime) println(s"$num is a prime number") else println(s"$num is not a prime number")
     }
 }
+
+// WRITE A SCALA PROGRAM TO REVERSE A GIVEN.
+----------------------------------------------------------------
+// ALGORITHM
+    // 1. WHY DO WE NEED TO WRITE AN ALGORITHM FOR THIS :P
+
+def reverseNum(number: Int): Int = {
+    number.toString.reverse.toInt
+}
+
