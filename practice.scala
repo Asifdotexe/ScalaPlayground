@@ -31,3 +31,18 @@ def isPalindrome(text: String): Boolean = {
     reversedText == text
 }
 
+// WRITE A SCALA PROGRAM TO DISPLAY FIRST 10 NATURAL NUMBERS AND THEIR SUM
+----------------------------------------------------------------
+// ALGORITHM
+    // 1. Intialize the sum as 0
+    // 2. Loop through number 1 to 10
+    // 3. Add each number to the sum
+    // 4. Print the number and continue the Loop
+    // 5. After the loop print the total sum.
+
+var naturalSum = 0
+for (i <- 0 until 11) {
+    naturalSum += i
+    println(i)
+}
+println(naturalSum)
