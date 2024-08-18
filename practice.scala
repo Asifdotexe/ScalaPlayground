@@ -1,4 +1,4 @@
-// WRITE A SCALA PRHRAM TO PRINT THE FIBONACCI SERIES UP TO 100.
+// 1. WRITE A SCALA PRHRAM TO PRINT THE FIBONACCI SERIES UP TO 100.
 ----------------------------------------------------------------
 // ALGORITHM
     // 1. Initialize the first two number of the series as a = 0 and b = 1
@@ -18,7 +18,7 @@ while (a < target) {
     b = nextNumber
 }
 
-// WRITE A SCALA PROGRAM TO FIND WHETHER A STRING IS PALINDROME OR NOT 
+// 2. WRITE A SCALA PROGRAM TO FIND WHETHER A STRING IS PALINDROME OR NOT 
 ----------------------------------------------------------------
 // ALGORITHM 
     // 1. Define a fucntion that takes a string as input.
@@ -31,7 +31,7 @@ def isPalindrome(text: String): Boolean = {
     reversedText == text
 }
 
-// WRITE A SCALA PROGRAM TO DISPLAY FIRST 10 NATURAL NUMBERS AND THEIR SUM
+// 3. WRITE A SCALA PROGRAM TO DISPLAY FIRST 10 NATURAL NUMBERS AND THEIR SUM
 ----------------------------------------------------------------
 // ALGORITHM
     // 1. Intialize the sum as 0
@@ -47,7 +47,7 @@ for (i <- 0 until 11) {
 }
 println(naturalSum)
 
-// WRITE A SCALA PROGRAM TO FIND THE ENTERED YEAR IS A LEAP YEAR OR NOT
+// 4. WRITE A SCALA PROGRAM TO FIND THE ENTERED YEAR IS A LEAP YEAR OR NOT
 ----------------------------------------------------------------
 // ALGORITHM
     // 1. Take input from the user
@@ -62,7 +62,7 @@ def isLeapYear(year: Int): Boolean = {
     }
 }
 
-// WRITE A SCALA PROGRAM TO FIND WHETHER A GIVEN NUMBER IS PRIME OR NOT.
+// 5. WRITE A SCALA PROGRAM TO FIND WHETHER A GIVEN NUMBER IS PRIME OR NOT.
 ----------------------------------------------------------------
 // ALGORITHM
     // 1. Define the function tha takes a number as input
@@ -70,8 +70,6 @@ def isLeapYear(year: Int): Boolean = {
     // 3. Loop through the number starting from 2 up to the square root.
     // 4. If any number divides the input number, it is not a prime number.
     // 5. if no divisor are found, it is a prime number.
-
-import scala.math.sqrt
 
 import scala.math.sqrt
 
@@ -90,7 +88,7 @@ def find_prime_number(num: Int) = {
     }
 }
 
-// WRITE A SCALA PROGRAM TO REVERSE A GIVEN.
+// 6. WRITE A SCALA PROGRAM TO REVERSE A GIVEN.
 ----------------------------------------------------------------
 // ALGORITHM
     // 1. WHY DO WE NEED TO WRITE AN ALGORITHM FOR THIS :P
@@ -99,7 +97,7 @@ def reverseNum(number: Int): Int = {
     number.toString.reverse.toInt
 }
 
-// WRITE A SCAL A PROGRAM TO CHECK WHETHER TWO POSITVE INTEGRERS HAVE THE SAME LAST DIGIT
+// 7. WRITE A SCAL A PROGRAM TO CHECK WHETHER TWO POSITVE INTEGRERS HAVE THE SAME LAST DIGIT
 ----------------------------------------------------------------
 // ALGORITHM
     // 1. Define a function that takes two numbers as input.
@@ -111,7 +109,7 @@ def sameLastDigit(number1: Int, number2: Int): Boolean = {
     number1 % 10 == number2 % 10
 }
 
-// WRITE A SCALA PROGRAM TO CALCULATE THE SUM OF DIGITS IN A GIVEN NUMBER.
+// 8. WRITE A SCALA PROGRAM TO CALCULATE THE SUM OF DIGITS IN A GIVEN NUMBER.
 ----------------------------------------------------------------
 // ALGORITHM
     // 1. Define a function that takes a number as input.
@@ -124,7 +122,7 @@ def sumOfDigits(number: Int): Int = {
     number.toString.map(_.asDigit).sum
 }
 
-// WRITE A SCALA PROGRAM TO CHECK IF A NUMBER IS A PALINDROME
+// 9. WRITE A SCALA PROGRAM TO CHECK IF A NUMBER IS A PALINDROME
 ----------------------------------------------------------------
 // ALGORITHM
     // 1. Define a function to take a number as an input
@@ -137,7 +135,7 @@ def isNumPalindrome(number: Int): Boolean = {
     number.toString == number.toString.reverse
 }
 
-// WRITE A SCALA PROGRAM TO COUNT THE NUMBER OF VOWELS IN A GIVEN STRING USING IF-ELSE STATEMENT AND PATTERN MATCHING.
+// 10. WRITE A SCALA PROGRAM TO COUNT THE NUMBER OF VOWELS IN A GIVEN STRING USING IF-ELSE STATEMENT AND PATTERN MATCHING.
 ----------------------------------------------------------------
 // ALGORITHM
     // 1. Define a function that takes a string as an input
@@ -158,7 +156,7 @@ def countVowels(text: String): Int = {
     vowelCount
 }
 
-// WRITE A SCALA PROGRAM TO CHECK IF EITHER OF TWO GIVEN INTEGERS IS IN THE RANGE OF 100 - 200 INCLUSIVE
+// 11. WRITE A SCALA PROGRAM TO CHECK IF EITHER OF TWO GIVEN INTEGERS IS IN THE RANGE OF 100 - 200 INCLUSIVE
 ------------------------------------------------------------------------------
 // ALGORITHM
     // 1. Define a function that takes two numbers as input.
@@ -169,7 +167,7 @@ def inRange(number1: Int, number2: Int): Boolean = {
     (number1 >= 100 && number1 <= 200) || (number2 >= 100 && number2 <= 200)
 }
 
-WRITE A SCALA PROGRAM TO CHECK IF A NUMBER IS DIVISIBLE BY 3 OR 5
+// 12. WRITE A SCALA PROGRAM TO CHECK IF A NUMBER IS DIVISIBLE BY 3 OR 5
 ----------------------------------------------------------------
 // ALGORITHM
     // 1. NOPE... TO EASY FOR ADDING AN ALGORITHM
@@ -178,9 +176,47 @@ def div_by_3_or_5(number: Int): Boolean = {
     number % 3 == 0 || number % 5 == 0
 }
 
-Write a Scala Program to Check if Two Given Integers Meet Specific Conditions
-Check if either number is 50, or if their sum equals 50.
+// 13. Write a Scala Program to Check  if Two Given Integers Meet Specific Conditions
+//Check if either number is 50, or if their sum equals 50.
 --------------------------------------------------------------------
 def check_fifty(a: Int, b: Int): Boolean = {
     a == 50 || b == 50 || (a + b == 50)
+}
+
+// 14. WRITE A SCALA PROGRAM TO CREATE A NEW STRING WHERE 'HI' IS ADDED TO THE FRONT OF A GIVEN STRING. 
+// IF THE STRING ALREADY BEGINS WITH 'HI', RETURN THE STRING UNCHANGED.
+----------------------------------------------------------------
+// ALGORITHM
+    // 1. Define a function that takes string as input.
+    // 2. Convert the string to lowercase for case-insensitive check.
+    // 3. Check if the lowercase string starts with 'hi'
+    // 4. If it does, return the original string.
+    // 5. If it does not, return the lowercase string concatenated with 'hi'.
+
+def add_hi(text: String): String = {
+    if (text.toLowerCase.startsWith("hi")) {
+        text
+    } else {
+        "hi" + text
+    }
+}
+
+// 15. WRITE A SCALA PROGRAM TO CREATE A NEW STRING WHICH IS 3 COPIES OF THE 2 FRONT CHARACTERS OF A GIVEN STRING.
+// IF THE GIVE STRING IS LESS THAN 2 RETURN THE ORIGINAL STRING
+----------------------------------------------------------------
+// ALGORITHM
+		// 1. Define a function that takes a string as input.
+		// 2. Check if the length of the string is less than 2.
+		// 3. If it is, then return the original string.
+		// 4. Otherwise, extract the first 2 characters.
+		// 5. Concatenate these characteres three times to create new string
+		// 6. Return the new string
+
+def create_new_string(text: String): String = {
+		if (text.length <= 2) {
+				text
+		} else {
+				val front = text.substring(0,2)
+				front*3
+		}
 }
