@@ -255,6 +255,7 @@ def addPrefixSuffix(text: String): String = {
 // ALGORITHM
     // 1. Define a function that takes three integers as input.
     // 2. Check if any of the numbers falls within the range 20 to 50.
+    // 3. If any number is within the range, return "VALID". Otherwise, return "INVALID".
 
 def check_range_define_validity(number1: Int, number2: Int, number3: Int): Unit = {
     if ((number1 >= 20 && number1 <= 50) || (number2 >= 20 && number2 <= 50) || (number3 >= 20 && number3 <= 50)) {
