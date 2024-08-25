@@ -332,4 +332,3 @@ def printClassroomItems(list1: List[String], list2: List[String]) = {
     val mergedList = List(list1, list2)
     mergedList.flatten.foreach(item => println(item + " is required in the classroom")
 }
-
