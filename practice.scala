@@ -293,3 +293,14 @@ def convertLastFourToUppercase(text: String): String = {
     }
 }
 
+// 21. WRITE A SCALA PROGRAM TO CREATE A MAP AND FIND THE SUM OF ALL VALUES IN THE MAP
+
+// ALGORITHM
+    // 1. Create a map with key-value pairs where keys are unique identifiers, and values are integers.
+    // 2. Use the `.values` method to extract all the values from the map.
+    // 3. Use the `.sum` method to calculate the sum of all the values in the map.
+    // 4. Return or print the sum.
+
+def sumOfValues(map: Map[String, Int]): Int = {
+    map.values.sum
+}
