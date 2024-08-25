@@ -11,8 +11,8 @@ var target: Int = 100
 var a: Int = 0
 var b: Int = 1
 
-while (a < target) {
-    print(a)
+while (a < 100) {
+    println(a)
     val nextNumber = a + b
     a = b 
     b = nextNumber
@@ -88,7 +88,7 @@ def find_prime_number(num: Int) = {
     }
 }
 
-// 6. WRITE A SCALA PROGRAM TO REVERSE A GIVEN.
+// 6. WRITE A SCALA PROGRAM TO REVERSE A GIVEN NUMBER.
 ----------------------------------------------------------------
 // ALGORITHM
     // 1. WHY DO WE NEED TO WRITE AN ALGORITHM FOR THIS :P
@@ -177,7 +177,7 @@ def div_by_3_or_5(number: Int): Boolean = {
 }
 
 // 13. Write a Scala Program to Check  if Two Given Integers Meet Specific Conditions
-//Check if either number is 50, or if their sum equals 50.
+// Check if either number is 50, or if their sum equals 50.
 --------------------------------------------------------------------
 def check_fifty(a: Int, b: Int): Boolean = {
     a == 50 || b == 50 || (a + b == 50)
@@ -193,7 +193,7 @@ def check_fifty(a: Int, b: Int): Boolean = {
     // 4. If it does, return the original string.
     // 5. If it does not, return the lowercase string concatenated with 'hi'.
 
-def add_hi(text: String): String = {
+def add_hi(text: String): String = {        
     if (text.toLowerCase.startsWith("hi")) {
         text
     } else {
@@ -277,3 +277,19 @@ def characterOccuerence(character: Char, text: String): Boolean = {
     val charCount = text.count(_ == character)
     charCount >= 2 && charCount <= 4
 }
+
+// 20 WRITE A SCALA PROGRAM TO CONVERT THE LAST 4 CHARACTER OF A GIVEN STRING IN UPPERCASE, IF THE LENGTH OF THE STRING HAS LESS THAN 4 THEN UPPERCASE ALL THE CHARACTERS
+
+// ALGORITHM
+    // 1. Define a function that takes a string as input.
+    // 2. Check if the length of the string is less than 4.
+    // 3. If it is, convert all characters in the string to uppercase.
+
+def convertLastFourToUppercase(text: String): String = {
+    if (text.length < 4) {
+        text.toUpperCase
+    } else {
+        text.substring(0, text.length - 4) + text.substring(text.length - 4, text.length).toUpperCase
+    }
+}
+
