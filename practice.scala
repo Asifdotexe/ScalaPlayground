@@ -304,3 +304,9 @@ def convertLastFourToUppercase(text: String): String = {
 def sumOfValues(map: Map[String, Int]): Int = {
     map.values.sum
 }
+
+// 22. Write a SCALA program to create a map and find the difference between two maps
+
+def keyDifference(map1: Map[String, Int], map2: Map[String, Int]): Set[String] = {
+    map1.keySet -- map2.keySet
+}
