@@ -332,3 +332,30 @@ def printClassroomItems(list1: List[String], list2: List[String]) = {
     val mergedList = List(list1, list2)
     mergedList.flatten.foreach(item => println(item + " is required in the classroom")
 }
+
+Write a Scala program which defines a method named "toUpper" and it accepts a String as input parameter that is then formatted to upper case as output. Define another method named "toLower" which accepts a String as input parameter and formats the input to lower case as output. Define another method named "formatNames" which also has an input String called "name". This method however has a parameter group which accepts a function with an input of type String and also outputs a String. This particular function will be used to apply the given format to the "name" input.
+You can use the test inputs: "Ajay", "Sam", and "John", and make sure that the output is as shown below.
+Output:
+AJAY
+sam
+JOHN
+-------------------------------------------------------------------------------------
+// ALGORITHM
+// 1. Define the "toUpper" method to convert a string to uppercase.
+// 2. Define the "toLower" method to convert a string to lowercase.
+// 3. Create a list of names.
+// 4. Use a loop to iterate over the list, applying "toUpper" for even indices and "toLower" for odd indices.
+// 5. Print the formatted names.
+
+def toUpper(str: String): String = str.toUpperCase
+def toLower(str: String): String = str.toLowerCase
+def formatNames(name: String, formatFunction: String => String): String = {
+    formatFunction(name)
+}
+
+var inputs = Map(
+    "Asif" -> toUpper,
+    "Aftab" -> toLower,
+    "Sayyed" -> toUpper,
+    "Mohammed" -> toLower
+)
