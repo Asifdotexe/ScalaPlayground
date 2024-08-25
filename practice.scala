@@ -310,3 +310,26 @@ def sumOfValues(map: Map[String, Int]): Int = {
 def keyDifference(map1: Map[String, Int], map2: Map[String, Int]): Set[String] = {
     map1.keySet -- map2.keySet
 }
+
+// 23. Write a Scala program and create two Lists data structures as follows:
+// (1) The first List will have items named "pencil", "eraser", "sharpener".
+// (2) The second List will have items name "Text book", "Note book", "Rough book".
+// Merge the two List data structures such that the resulting combined data structure is of type List[List[String]].
+// Finally, output all items with the literal" is required in the classroom.".
+// Output:
+// pencil is required in the classroom.
+// eraser is required in the classroom.
+// sharpener is required in the classroom.
+// Text book is required in the classroom.
+----------------------------------------------------------------------------------
+// ALGORITHM
+    // 1. Create two lists with the given items.
+    // 2. Merge the two lists into a List of Lists.
+    // 3. Flatten the List of Lists to iterate through each item.
+    // 4. Print each item followed by the string "is required in the classroom."
+
+def printClassroomItems(list1: List[String], list2: List[String]) = {
+    val mergedList = List(list1, list2)
+    mergedList.flatten.foreach(item => println(item + " is required in the classroom")
+}
+
