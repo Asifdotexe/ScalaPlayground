@@ -27,8 +27,7 @@ while (a < 100) {
     // 4. Return true if they match otherwise return false
 
 def isPalindrome(text: String): Boolean = {
-    val reversedText = text.reverse
-    reversedText == text
+    text.toLowerCase.reverse == text.toLowerCase()
 }
 
 // 3. WRITE A SCALA PROGRAM TO DISPLAY FIRST 10 NATURAL NUMBERS AND THEIR SUM
